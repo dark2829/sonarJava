@@ -21,4 +21,4 @@ jobs:
 
     - name: Build and test Spring Boot application
       run: |
-        ./mvnw test
+        mvn test
