@@ -1,0 +1,24 @@
+name: Test Status
+
+on:
+  workflow_run:
+    workflows: ["Run Tests"]
+    types:
+      - completed
+
+jobs:
+  test-status:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Get test result
+      id: get-result
+      run: |
+        result=$(jq -r '.conclusion' $GITHUB_EVENT_PATH)
+        echo "::set-output name=result::$result"
+
+    - name: Print test status
+      run: echo "Test status: ${{ needs.test.outputs.result }}"
