@@ -21,9 +21,10 @@ jobs:
 
     - name: Build and test Spring Boot application
       run: |
-        mvn test > output.txt
+        mvn test
         if [ $? -ne 0 ]; then
-          echo "Tests failed. Removing the last commit."
-          git reset --hard HEAD^
+          echo "Tests failed. Reverting the last commit."
+          git revert HEAD -n
+          git commit -m "Revert the last commit"
           exit 1
         fi
