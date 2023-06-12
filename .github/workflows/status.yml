@@ -19,18 +19,23 @@ jobs:
       run: |
         result=$(echo "${{ github.event.workflow_run.conclusion }}")
 
-    - name: Delete branch if tests failed
+    - name: Get workflow run status
+      id: get-status
       uses: actions/github-script@v4
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          const result = '${{ needs.build.outputs.result }}';
-          if (result === 'failure') {
-            const branchName = `refs/heads/${{ github.ref }}`;
-            github.git.deleteRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: branchName
-            });
-            console.log(`Deleted branch: ${branchName}`);
-          }
+          const runId = '${{ github.event.workflow_run.id }}';
+          const { data: run } = await github.actions.getWorkflowRun({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            run_id: runId
+          });
+          console.log(run.status);
+          return run.status;
+
+    - name: Reset branch to previous commit
+      if: steps.get-status.outputs.result == 'failure'
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.base_ref }}

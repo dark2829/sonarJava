@@ -13,12 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Create branch backup
-      run: |
-        git branch backupBranch
-        git checkout backupBranch
-        git push origin backupBranch
-
     - name: Set up Java
       uses: actions/setup-java@v2
       with:
