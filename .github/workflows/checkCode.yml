@@ -18,9 +18,6 @@ jobs:
       with:
         java-version: '11'
 
-    - name: Display Java version
-      run: echo "Java version: ${{ env.JAVA_HOME }}"
-
     - name: Build and test Spring Boot application
       run: |
         ./mvnw test
