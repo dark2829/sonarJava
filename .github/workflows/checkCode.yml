@@ -21,8 +21,9 @@ jobs:
 
     - name: Build and test Spring Boot application
       run: |
-        mvn test > output.txt
+        mvn test
         if [ $? -ne 0 ]; then
-          echo "Tests failed. Aborting push."
+          echo "Tests failed. Removing the last commit."
+          git reset --hard HEAD^
           exit 1
         fi
