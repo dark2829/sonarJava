@@ -19,6 +19,3 @@ jobs:
       run: |
         result=$(jq -r '.conclusion' $GITHUB_EVENT_PATH)
         echo "::set-output name=result::$result"
-
-    - name: Print test status
-      run: echo "Test status: ${{ needs.test.outputs.result }}"
