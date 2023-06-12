@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17.0.6'
-        distribution: 'jdk'
+        distribution: 'adopt'
 
     - name: Build and test Spring Boot application
       run: |
