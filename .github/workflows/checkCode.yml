@@ -21,4 +21,8 @@ jobs:
 
     - name: Build and test Spring Boot application
       run: |
-        mvn test
+        mvn test > output.txt
+        if [ $? -ne 0 ]; then
+          echo "Tests failed. Aborting push."
+          exit 1
+        fi
