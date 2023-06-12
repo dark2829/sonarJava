@@ -17,5 +17,5 @@ jobs:
     - name: Get test result
       id: get-result
       run: |
-        result=$(jq -r '.conclusion' $GITHUB_EVENT_PATH)
+        result=$(echo "${{ github.event.workflow_run.conclusion }}")
         echo "::set-output name=result::$result"
