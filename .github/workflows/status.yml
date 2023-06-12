@@ -18,4 +18,19 @@ jobs:
       id: get-result
       run: |
         result=$(echo "${{ github.event.workflow_run.conclusion }}")
-        echo "::set-output name=result::$result"
+
+    - name: Delete branch if tests failed
+      uses: actions/github-script@v4
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const result = '${{ needs.build.outputs.result }}';
+          if (result === 'failure') {
+            const branchName = `refs/heads/${{ github.ref }}`;
+            github.git.deleteRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: branchName
+            });
+            console.log(`Deleted branch: ${branchName}`);
+          }
