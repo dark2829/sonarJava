@@ -19,11 +19,14 @@ jobs:
         java-version: '17.0.6'
         distribution: 'adopt'
 
+    - name: Backup current commit
+      run: git branch -m backup-branch
+
     - name: Build and test Spring Boot application
+      run: mvn test
+
+    - name: Reset to previous commit if tests failed
+      if: ${{ failure() }}
       run: |
-        mvn test
-        if [ $? -ne 0 ]; then
-          echo "Tests failed."
-        else
-          echo "Tests passed."
-        fi
+        git checkout -B master backup-branch
+        git branch -D backup-branch
