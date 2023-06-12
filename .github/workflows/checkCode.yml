@@ -14,10 +14,12 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Java
-      id: java
       uses: actions/setup-java@v2
-      with: 
+      with:
         java-version: '11'
+
+    - name: Display Java version
+      run: echo "Java version: ${{ env.JAVA_HOME }}"
 
     - name: Build and test Spring Boot application
       run: |
