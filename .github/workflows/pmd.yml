@@ -42,6 +42,7 @@ jobs:
         ls
         ls ../
         ls ../../
+        ls ../../../
         ls ./
         ./pmd check -d ./src/main/java -R ../PMD/rulesets/java/gardian.xml -f text
 
