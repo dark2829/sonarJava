@@ -42,10 +42,10 @@ jobs:
         output=$(./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f text)
         echo "$output"
         if echo "$output" | grep -q "ParseException"; then
-          echo -e "\e[1;31mFAILED\e[0mPMD encontró un ParseException en la salida."
+          echo -e "\e[1;31mFAILED\e[0mPMD encontró un errores en tu codigo."
           exit 1
         else
-          echo -e "\e[1;32mACCEPT\e[0mPMD no encontró un ParseException en la salida."
+          echo -e "\e[1;32mACCEPT\e[0mPMD no encontró errores."
         fi
 
     - name: Guardar caché de PMD
