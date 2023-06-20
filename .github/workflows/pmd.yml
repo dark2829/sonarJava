@@ -35,12 +35,11 @@ jobs:
         curl -L -o pmd.zip https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.0.0-rc3/pmd-dist-7.0.0-rc3-bin.zip
         unzip pmd.zip -d pmd
         rm pmd.zip
-        ls pmd
 
     - name: Ejecutar PMD
       run: |
         cd pmd/pmd-bin-7.0.0-rc3/bin
-        ./run.sh pmd -d src/main/java -R ../PMD/rulesets/java/gardian.xml -f text
+        pmd -d src/main/java -R ../PMD/rulesets/java/gardian.xml -f text
 
     - name: Guardar caché de PMD
       if: steps.cache-check.outputs.cache-hit != 'true'
