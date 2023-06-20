@@ -33,9 +33,8 @@ jobs:
       if: steps.cache-check.outputs.cache-hit != 'true'
       run: |
         curl -L -o pmd.zip https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.0.0-rc3/pmd-dist-7.0.0-rc3-bin.zip
-        unzip pmd-dist-7.0.0-rc3-bin.zip -d pmd
-        rm pmd.zip
-        ls pmd
+        ls
+        
 
     - name: Ejecutar PMD
       run: |
