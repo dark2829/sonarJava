@@ -38,7 +38,7 @@ jobs:
 
     - name: Ejecutar PMD
       run: |
-        ls
+        ls src
 
     - name: Guardar caché de PMD
       if: steps.cache-check.outputs.cache-hit != 'true'
