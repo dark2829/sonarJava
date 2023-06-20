@@ -39,9 +39,7 @@ jobs:
     - name: Ejecutar PMD
       run: |
         cd pmd/pmd-bin-7.0.0-rc3/bin
-        ls ../../../
-        ls ../../../../
-        ./pmd check -d ../../../src/main/java -R ../PMD/rulesets/java/gardian.xml -f text
+        ./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f text
 
     - name: Guardar caché de PMD
       if: steps.cache-check.outputs.cache-hit != 'true'
