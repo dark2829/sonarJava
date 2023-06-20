@@ -39,7 +39,21 @@ jobs:
     - name: Ejecutar PMD
       run: |
         cd pmd/pmd-bin-7.0.0-rc3/bin
-        ./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f text
+        pmd_command="./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f text"
+        pmd_output=$(eval "$pmd_command")
+
+    - name: Verificar problemas de PMD
+        run: |
+          echo "$pmd_output" | grep -q "ParseException"
+          pmd_exit_code=$?
+          if [ $pmd_exit_code -eq 0 ]; then
+            echo >&2 -e "\e[1;31mFAILED\e[0m PMD encontró problemas en el código. Abortando push, corrija los cambios antes de realizar el siguiente push"
+            echo "$pmd_output"
+            exit 1
+          else
+            echo >&2 -e "\e[1;34mSUCCESS\e[0m PMD no encontró problemas en el código. \e[1;32mPush en proceso\e[0m"
+            exit 0
+          fi
 
     - name: Guardar caché de PMD
       if: steps.cache-check.outputs.cache-hit != 'true'
