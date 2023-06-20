@@ -41,6 +41,8 @@ jobs:
         cd pmd/pmd-bin-7.0.0-rc3/bin
         ls
         ls ../
+        ls ../../
+        ls ./
         ./pmd check -d ./src/main/java -R ../PMD/rulesets/java/gardian.xml -f text
 
     - name: Guardar caché de PMD
