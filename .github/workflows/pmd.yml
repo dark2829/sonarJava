@@ -39,7 +39,7 @@ jobs:
 
     - name: Ejecutar PMD
       run: |
-        cd pmd/pmd-bin-6.39.1/bin
+        cd pmd/pmd-bin-7.0.0-rc3/bin
         ./run.sh pmd -d src/main/java -R ../PMD/rulesets/java/gardian.xml -f text
 
     - name: Guardar caché de PMD
