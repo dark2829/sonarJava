@@ -25,23 +25,12 @@
             <property name="xpath">
                 <value>
                     //PrimaryPrefix/Name[
-                        (@Image='Log' or starts-with(@Image, 'log.')) and
+                        (@Image='Log' or starts-with(@Image, 'log')) and
                         ancestor::StatementExpression[ancestor::MethodDeclaration]
                     ]
                 </value>
             </property>
         </properties>
-
-        <example>
-            <![CDATA[
-            // Bad: Logging statement found
-            Log.info("This is a log message");
-            
-            // Good: No logging statement
-            int x = 5;
-            ]]>
-        </example>
-
     </rule>  
     
 </ruleset>
