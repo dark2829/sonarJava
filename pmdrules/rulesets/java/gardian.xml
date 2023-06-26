@@ -10,27 +10,38 @@
     <rule ref='rulesets/java/imports.xml'/>    
     <rule ref='rulesets/java/logging-java.xml'/>    
     <rule ref='rulesets/java/empty.xml'/>    
-    <rule name="NoLoggingRule"
-          language="java"
-          message="No logging statements found"
-          class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <rule name="LoggingRule" language="java" message="Logging statement found" class="net.sourceforge.pmd.lang.rule.XPathRule">
 
-        <description>
-            This rule detects the absence of log statements in Java code.
-        </description>
+    <description>
+        This rule detects the presence of log statements in Java code.
+    </description>
 
-        <priority>3</priority>
+    <priority>1</priority>
 
-        <properties>
-            <property name="xpath">
-                <value>
-                    //PrimaryPrefix/Name[
-                        (@Image='Log' or starts-with(@Image, 'log')) and
-                        ancestor::StatementExpression[ancestor::MethodDeclaration]
-                    ]
-                </value>
-            </property>
-        </properties>
-    </rule>  
+    <properties>
+        <property name="xpath">
+            <value>
+                //PrimaryPrefix/Name[
+                    starts-with(@Image, 'log.') or
+                    @Image='log.debug' or
+                    @Image='log.info' or
+                    @Image='log.error'
+                ]
+            </value>
+        </property>
+    </properties>
+
+    <example>
+        <![CDATA[
+        // Bad: Logging statement found
+        log.info("This is a log message");
+        
+        // Good: No logging statement
+        int x = 5;
+        ]]>
+    </example>
+
+</rule>
+
     
 </ruleset>
