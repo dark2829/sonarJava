@@ -24,7 +24,10 @@
         <properties>
             <property name="xpath">
                 <value>
-                    //StatementExpression/PrimaryExpression/PrimaryPrefix/Name[@Image='Log']
+                    //PrimaryPrefix/Name[
+                    @Image='Log' or starts-with(@Image, 'log.')) and
+                    ancestor::StatementExpression[ancestor::MethodDeclaration]
+                    ]
                 </value>
             </property>
         </properties>
