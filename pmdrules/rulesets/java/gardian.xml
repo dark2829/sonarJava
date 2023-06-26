@@ -6,6 +6,7 @@
     <description>Java code rules</description>
 
     <rule ref='rulesets/java/strings.xml'/>
+    <rule ref='rulesets/java/basic.xml'/>    
         
      
 
