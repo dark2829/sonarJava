@@ -12,7 +12,7 @@
     <rule ref='rulesets/java/empty.xml'/>    
     <rule ref='rulesets/java/naming.xml'/>    
     <rule ref='rulesets/java/unnecessary.xml'/>    
-    <rule ref='rulesets/java/optimizations.xml'/>    
+        
     <rule ref='rulesets/java/finalizers.xml'/>    
     <rule ref='rulesets/java/comments.xml'/>    
 
