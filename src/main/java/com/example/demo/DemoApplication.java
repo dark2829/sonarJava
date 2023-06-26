@@ -11,6 +11,5 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		String cls = "texto"; 
 		SpringApplication.run(DemoApplication.class, args);
-		log.info("A");
 	}   
 }
