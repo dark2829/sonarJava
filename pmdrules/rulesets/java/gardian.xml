@@ -7,6 +7,35 @@
 
     <rule ref='rulesets/java/strings.xml'/>
     <rule ref='rulesets/java/basic.xml'/>
-    <rule ref='rulesets/java/log-presence-rule.xml'/>
+    <rule name="NoLoggingRule"
+          language="java"
+          message="No logging statements found"
+          class="net.sourceforge.pmd.lang.rule.XPathRule">
+
+        <description>
+            This rule detects the absence of log statements in Java code.
+        </description>
+
+        <priority>1</priority>
+
+        <properties>
+            <property name="xpath">
+                <value>
+                    //StatementExpression/PrimaryExpression/PrimaryPrefix/Name[@Image='Log']
+                </value>
+            </property>
+        </properties>
+
+        <example>
+            <![CDATA[
+            // Bad: Logging statement found
+            Log.info("This is a log message");
+            
+            // Good: No logging statement
+            int x = 5;
+            ]]>
+        </example>
+
+    </rule>
 
 </ruleset>
