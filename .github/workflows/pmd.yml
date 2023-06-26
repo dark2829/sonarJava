@@ -41,10 +41,10 @@ jobs:
         cd pmd/pmd-bin-7.0.0-rc3/bin
         output=$(./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f text)
         if echo "$output" | grep -q "ERROR"; then
-          echo -e "\e[1;31mFAILED\e[0mPMD encontró un errores en tu codigo."
+          echo -e "\e[1;31mFAILED\e[0m PMD encontró un errores en tu codigo."
           exit 1
         else
-          echo -e "\e[1;32mACCEPT\e[0mPMD no encontró errores."
+          echo -e "\e[1;32mACCEPT\e[0m PMD no encontró errores."
         fi
 
     - name: Guardar caché de PMD
