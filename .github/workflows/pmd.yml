@@ -40,7 +40,6 @@ jobs:
       run: |
         cd pmd/pmd-bin-7.0.0-rc3/bin
         output=$(./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f text)
-        echo "$output"
         if echo "$output" | grep -q "ERROR"; then
           echo -e "\e[1;31mFAILED\e[0mPMD encontró un errores en tu codigo."
           exit 1

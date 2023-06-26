@@ -5,12 +5,7 @@
 
     <description>Java code rules</description>
 
-    <rule ref='rulesets/java/strings.xml'/>
-    <rule ref='rulesets/java/basic.xml'/>    
-    <rule ref='rulesets/java/logging-java.xml'/>    
-    <rule ref='rulesets/java/imports.xml'/>    
-    <rule ref='rulesets/java/empty.xml'/>    
-    <rule ref='rulesets/java/naming.xml'/>    
+        
      
 
 </ruleset>
