@@ -8,8 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Slf4j
 public class DemoApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
-        log.info("Application started");
-    }   
+	public static void main(String[] args) {
+		String cls = "texto"; 
+		SpringApplication.run(DemoApplication.class, args);
+		log.info("A");
+	}   
+	
 }
