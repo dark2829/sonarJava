@@ -7,6 +7,6 @@
 
     <rule ref='rulesets/java/strings.xml'/>
     <rule ref='rulesets/java/basic.xml'/>
-    <rule ref='rulesets/java/logging-java.xml'/>
+    <rule ref='rulesets/java/log-presence-rule.xml'/>
 
 </ruleset>
