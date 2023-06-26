@@ -6,15 +6,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @Slf4j
-public class MyClass {
-    private static final String str = "Hello";
+public class DemoApplication {
+    private static final Logger logger = LoggerFactory.getLogger(MyClass.class);
     
     public void myMethod() {
-        System.out.println("This is an example");
+        logger.info("This is an example");
     }
     
-    public void AnotherMethod() {
+    public void anotherMethod() {
         String message = "Hello, World!";
-        System.out.println(message);
+        logger.info(message);
     }
 }
+
