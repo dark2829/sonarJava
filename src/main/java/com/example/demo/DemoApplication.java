@@ -6,11 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @Slf4j
-public class DemoApplication {
-
-	public static void main(String[] args) {
-		String cls = "texto"; 
-		SpringApplication.run(DemoApplication.class, args);
-		log.info("A");
-	}   
+public class MyClass {
+    private static final String str = "Hello";
+    
+    public void myMethod() {
+        System.out.println("This is an example");
+    }
+    
+    public void AnotherMethod() {
+        String message = "Hello, World!";
+        System.out.println(message);
+    }
 }
