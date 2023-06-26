@@ -19,7 +19,7 @@
             This rule detects the absence of log statements in Java code.
         </description>
 
-        <priority>1</priority>
+        <priority>3</priority>
 
         <properties>
             <property name="xpath">
