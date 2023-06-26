@@ -7,15 +7,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @Slf4j
 public class DemoApplication {
-    private static final Logger logger = LoggerFactory.getLogger(MyClass.class);
+    private static final String str = "Hello";
     
     public void myMethod() {
-        logger.info("This is an example");
+        System.out.println("This is an example");
     }
     
-    public void anotherMethod() {
+    public void AnotherMethod() {
         String message = "Hello, World!";
-        logger.info(message);
+        System.out.println(message);
     }
 }
 
