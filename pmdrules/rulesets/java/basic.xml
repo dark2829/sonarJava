@@ -29,8 +29,8 @@ The Basic ruleset contains a collection of good practices which should be follow
 
     <rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP" deprecated="true" />
     <rule ref="category/java/bestpractices.xml/CheckResultSet" deprecated="true" />
-    
-    <rule ref="category/java/bestpractices.xml/CheckResultSet" deprecated="true" />
+
+    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" deprecated="true" />
 
     <rule ref="category/java/codestyle.xml/ExtendsObject" deprecated="true" />
     <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" deprecated="true" />
