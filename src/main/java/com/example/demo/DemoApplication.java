@@ -17,4 +17,8 @@ public class DemoApplication {
         log.info("Application started successfully");
     }
 
+    public String getUsers() {
+        
+    }
+
 }

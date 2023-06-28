@@ -10,7 +10,7 @@ public class UserController {
 
     @GetMapping
     public String getUsers() {
-        return "User list";
+        
     }
 
 }
