@@ -21,7 +21,7 @@ public class DemoApplication {
         nombres.add("Pedro");
 
         for (String nombre : nombres) {
-            System.out.println(nombre);
+            log.info(nombre);
         }
 
     }
