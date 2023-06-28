@@ -31,6 +31,14 @@ The Basic ruleset contains a collection of good practices which should be follow
     <rule ref="category/java/bestpractices.xml/CheckResultSet" deprecated="true" />
 
     <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/GuardLogStatement" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/UseTryWithResources" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" deprecated="true" />
 
     <rule ref="category/java/codestyle.xml/ExtendsObject" deprecated="true" />
     <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" deprecated="true" />
