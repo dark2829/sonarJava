@@ -20,6 +20,10 @@ public class DemoApplication {
         nombres.add("María");
         nombres.add("Pedro");
 
+        for (int i = 0; i <= nombres.size(); i++) {
+            System.out.println(nombres.get(i));
+        }
+
     }
 
 }
