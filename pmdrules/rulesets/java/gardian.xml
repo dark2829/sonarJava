@@ -5,57 +5,10 @@
 
     <description>Java code rules</description>
 
-    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration"
-        message="No se permite crear instancias directamente. Utiliza métodos de fábrica o inyección de dependencias" >
-        <priority>5</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/AccessorMethodGeneration"
-        message="Acceso no permitido a campos/métodos privados." >
-        <priority>5</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField"
-        message="Evita declarar MessageDigest como campo." >
-        <priority>5</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace"
-        message="Evita printStackTrace(). Usa registro en su lugar." >
-        <priority>5</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt"
-        message="Etiqueta predeterminada debe ser la última en el cambio" >
-        <priority>5</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/GuardLogStatement"
-        message="Verifica si el nivel de registro está habilitado." >
-        <priority>5</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/UseTryWithResources"
-        message="Usa try-with-resources para cerrar recursos" >
-        <priority>5</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/UnnecessaryLocalBeforeReturn"
-        message="Evita la creación de variables locales innecesarias" >
-        <priority>1</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/UnnecessarySemicolon"
-        message="informa puntos y comas innecesarios (las llamadas 'declaraciones vacías' y 'declaraciones vacías'). …" >
-        <priority>1</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/ShortClassName"
-        message="no se recomiendan nombres de clase cortos con menos de, por ejemplo, cinco caracteres." >
-        <priority>1</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/ShortMethodName"
-        message="os nombres de métodos que son muy cortos no son útiles para el lector." >
-        <priority>1</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/ShortVariable"
-        message="los campos, las variables locales, los nombres de las constantes de enumeración o los nombres de los parámetros que son muy cortos no son útiles." >
-        <priority>1</priority>
-    </rule>   
-    <rule ref="category/java/bestpractices.xml/ForLoopShouldBeWhileLoop"
-        message="algunos bucles for se pueden simplificar a bucles while/foreach, lo que los hace más concisos." >
-        <priority>1</priority>
-    </rule>   
+    <rule ref='rulesets/java/strings.xml'/>
+    <rule ref='rulesets/java/basic.xml'/>    
+    <rule ref='rulesets/java/imports.xml'/>    
+    <rule ref='rulesets/java/logging-java.xml'/>    
+    <rule ref='rulesets/java/empty.xml'/>    
     
 </ruleset>
