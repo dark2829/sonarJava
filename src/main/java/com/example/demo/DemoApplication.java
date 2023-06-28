@@ -17,8 +17,8 @@ public class DemoApplication {
         nombres.add("Pedro");
 
         // Ejemplo con bucle 'for' que causa un error
-        for (int i = 0; i <= nombres.size(); i++) {
-            System.out.println(nombres.get(i));
+        for (String nombre : nombres) {
+            System.out.println(nombre);
         }
     }
 
