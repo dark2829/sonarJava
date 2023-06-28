@@ -10,7 +10,7 @@ import java.util.List;
 @SpringBootApplication
 @Slf4j
 public class DemoApplication {
-    String a = "a"
+    a
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
