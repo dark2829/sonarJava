@@ -14,16 +14,6 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
         log.info("Application started successfully");
-
-        List<String> nombres = new ArrayList<>();
-        nombres.add("Juan");
-        nombres.add("María");
-        nombres.add("Pedro");
-
-        for (String nombre : nombres) {
-            log.info(nombre);
-        }
-
     }
 
 }
