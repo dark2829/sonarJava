@@ -30,6 +30,7 @@ The Basic ruleset contains a collection of good practices which should be follow
     <rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP" deprecated="true" />
     <rule ref="category/java/bestpractices.xml/CheckResultSet" deprecated="true" />
 
+    <!--Basic-->
     <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" deprecated="true" />
     <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField" deprecated="true" />
     <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" deprecated="true" />
@@ -39,6 +40,18 @@ The Basic ruleset contains a collection of good practices which should be follow
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" deprecated="true" />
     <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" deprecated="true" />
     <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" deprecated="true" />
+
+    <!--Codestyle-->
+    <rule ref="category/java/codestyle.xml/AvoidDollarSigns" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/ClassNamingConventions" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/FieldNamingConventions" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/FormalParameterNamingConventions" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/MethodNamingConventions" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/PackageCase" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/ShortClassName" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/ShortMethodName" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/ShortVariable" deprecated="true" />
 
     <rule ref="category/java/codestyle.xml/ExtendsObject" deprecated="true" />
     <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" deprecated="true" />
