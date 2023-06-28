@@ -14,7 +14,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
         log.info("Application started successfully");
-        String a = "a";
+        String a = "a"
     }
 
 }
