@@ -10,15 +10,10 @@ import java.util.List;
 @SpringBootApplication
 @Slf4j
 public class DemoApplication {
-    a
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
         log.info("Application started successfully");
-    }
-
-    public String getUsers() {
-        
     }
 
 }
