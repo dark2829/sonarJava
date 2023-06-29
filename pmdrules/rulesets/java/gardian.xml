@@ -8,8 +8,8 @@
 
     <!--Basic-->
     <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" message="---" />  
-    <rule ref="category/java/codestyle.xml/UnnecessaryImport" message="Tienes algunos imports que no estas usando"  />
-    <rule ref="category/java/codestyle.xml/ForLoopCanBeForeach " message="Tienes algunos bucles for que pueden ser foreach"  />
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport"/>
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/>
     
     
 </ruleset>
