@@ -1,36 +1,12 @@
 <?xml version="1.0"?>
-<ruleset name="Java Code Rules" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+<ruleset name="My Project Rules" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd"
+         xsi:noNamespaceSchemaLocation="http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
 
     <description>Java code rules</description>
 
     <!--Basic-->
-    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" />
-    <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField" />
-    <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" />
-    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" />
-    <rule ref="category/java/bestpractices.xml/GuardLogStatement" />
-    <rule ref="category/java/bestpractices.xml/UseTryWithResources" />
-    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
-    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" />
-
-    <!--Codestyle-->
-    <rule ref="category/java/codestyle.xml/AvoidDollarSigns" />
-    <rule ref="category/java/codestyle.xml/ClassNamingConventions" />
-    <rule ref="category/java/codestyle.xml/FieldNamingConventions" />
-    <rule ref="category/java/codestyle.xml/FormalParameterNamingConventions" />
-    <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions" />
-    <rule ref="category/java/codestyle.xml/MethodNamingConventions" />
-    <rule ref="category/java/codestyle.xml/PackageCase" />
-    <rule ref="category/java/codestyle.xml/ShortClassName" />
-    <rule ref="category/java/codestyle.xml/ShortMethodName" />
-    <rule ref="category/java/codestyle.xml/ShortVariable" />
-    <rule ref="category/java/codestyle.xml/UnusedImports" >
-    <rule ref="category/java/codestyle.xml/UnnecessaryImport" >
-
-    <rule ref="category/java/codestyle.xml/ExtendsObject" />
-    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" />   
+    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" />  
     
 </ruleset>
