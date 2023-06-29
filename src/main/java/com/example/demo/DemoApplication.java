@@ -20,10 +20,14 @@ public class DemoApplication {
         nombres.add("Pedro");
         nombres.add("Ana");
 
-        // Usando un bucle for
-        for (int i = 0; i < nombres.size(); i++) {
-            System.out.println(nombres.get(i));
+        // Usando un bucle foreach
+        for (String nombre : nombres) {
+            System.out.println(nombre);
         }
+    }
+
+    public static int add(int a, int b) {
+        return a + b;
     }
 
 }

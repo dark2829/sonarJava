@@ -9,6 +9,7 @@
     <!--Basic-->
     <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" message="---" />  
     <rule ref="category/java/codestyle.xml/UnnecessaryImport"/>
+    <rule ref="category/java/codestyle.xml/ShortMethodName"/>
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/>
     
     
