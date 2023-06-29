@@ -8,6 +8,6 @@
 
     <!--Basic-->
     <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" />  
-    <rule ref="category/java/codestyle.xml/UnnecessaryImport" >
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport" />
     
 </ruleset>
