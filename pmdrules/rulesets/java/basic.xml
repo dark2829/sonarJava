@@ -53,6 +53,7 @@ The Basic ruleset contains a collection of good practices which should be follow
     <rule ref="category/java/codestyle.xml/ShortMethodName" deprecated="true" />
     <rule ref="category/java/codestyle.xml/ShortVariable" deprecated="true" />
     <rule ref="category/java/codestyle.xml/UnusedImports" deprecated="true"/>
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport" deprecated="true"/>
 
     <rule ref="category/java/codestyle.xml/ExtendsObject" deprecated="true" />
     <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" deprecated="true" />
