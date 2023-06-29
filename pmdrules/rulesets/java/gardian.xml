@@ -5,10 +5,32 @@
 
     <description>Java code rules</description>
 
-    <rule ref='rulesets/java/strings.xml'/>
-    <rule ref='rulesets/java/basic.xml'/>    
-    <rule ref='rulesets/java/imports.xml'/>    
-    <rule ref='rulesets/java/logging-java.xml'/>    
-    <rule ref='rulesets/java/empty.xml'/>    
+    <!--Basic-->
+    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" />
+    <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField" />
+    <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" />
+    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" />
+    <rule ref="category/java/bestpractices.xml/GuardLogStatement" />
+    <rule ref="category/java/bestpractices.xml/UseTryWithResources" />
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" />
+
+    <!--Codestyle-->
+    <rule ref="category/java/codestyle.xml/AvoidDollarSigns" />
+    <rule ref="category/java/codestyle.xml/ClassNamingConventions" />
+    <rule ref="category/java/codestyle.xml/FieldNamingConventions" />
+    <rule ref="category/java/codestyle.xml/FormalParameterNamingConventions" />
+    <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions" />
+    <rule ref="category/java/codestyle.xml/MethodNamingConventions" />
+    <rule ref="category/java/codestyle.xml/PackageCase" />
+    <rule ref="category/java/codestyle.xml/ShortClassName" />
+    <rule ref="category/java/codestyle.xml/ShortMethodName" />
+    <rule ref="category/java/codestyle.xml/ShortVariable" />
+    <rule ref="category/java/codestyle.xml/UnusedImports" >
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport" >
+
+    <rule ref="category/java/codestyle.xml/ExtendsObject" />
+    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" />   
     
 </ruleset>
