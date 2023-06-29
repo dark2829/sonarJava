@@ -23,4 +23,5 @@ These rules deal with different problems that can occur with import statements.
     <rule ref="category/java/codestyle.xml/ShortMethodName" deprecated="true" />
     <rule ref="category/java/codestyle.xml/TooManyStaticImports" deprecated="true" />
     <rule ref="category/java/codestyle.xml/UnnecessaryAnnotationValueElement" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/UnusedImports" deprecated="true"/>
 </ruleset>
