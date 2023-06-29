@@ -10,7 +10,6 @@ public class UserController {
 
     @GetMapping
     public String getUsers() {
-        System.out.println("a")
         return "User list";
     }
 
