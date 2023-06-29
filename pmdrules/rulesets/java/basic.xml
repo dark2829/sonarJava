@@ -9,59 +9,59 @@ The Basic ruleset contains a collection of good practices which should be follow
   </description>
 
     <!-- Rules, that have been moved into a category -->
-    <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/AvoidDecimalLiteralsInBigDecimalConstructor" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/AvoidMultipleUnaryOperators" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/AvoidUsingOctalValues" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/BrokenNullCheck" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/CheckSkipResult" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/ClassCastExceptionWithToArray" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/DontUseFloatTypeForLoopIndices" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/JumbledIncrementer" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/MisplacedNullCheck" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/OverrideBothEqualsAndHashcode" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/ReturnFromFinallyBlock" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/UnconditionalIfStatement" deprecated="true" />
+    <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop" />
+    <rule ref="category/java/errorprone.xml/AvoidDecimalLiteralsInBigDecimalConstructor" />
+    <rule ref="category/java/errorprone.xml/AvoidMultipleUnaryOperators" />
+    <rule ref="category/java/errorprone.xml/AvoidUsingOctalValues" />
+    <rule ref="category/java/errorprone.xml/BrokenNullCheck" />
+    <rule ref="category/java/errorprone.xml/CheckSkipResult" />
+    <rule ref="category/java/errorprone.xml/ClassCastExceptionWithToArray" />
+    <rule ref="category/java/errorprone.xml/DontUseFloatTypeForLoopIndices" />
+    <rule ref="category/java/errorprone.xml/JumbledIncrementer" />
+    <rule ref="category/java/errorprone.xml/MisplacedNullCheck" />
+    <rule ref="category/java/errorprone.xml/OverrideBothEqualsAndHashcode" />
+    <rule ref="category/java/errorprone.xml/ReturnFromFinallyBlock" />
+    <rule ref="category/java/errorprone.xml/UnconditionalIfStatement" />
 
-    <rule ref="category/java/multithreading.xml/AvoidThreadGroup" deprecated="true" />
-    <rule ref="category/java/multithreading.xml/DontCallThreadRun" deprecated="true" />
-    <rule ref="category/java/multithreading.xml/DoubleCheckedLocking" deprecated="true" />
+    <rule ref="category/java/multithreading.xml/AvoidThreadGroup" />
+    <rule ref="category/java/multithreading.xml/DontCallThreadRun" />
+    <rule ref="category/java/multithreading.xml/DoubleCheckedLocking" />
 
-    <rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/CheckResultSet" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP" />
+    <rule ref="category/java/bestpractices.xml/CheckResultSet" />
 
     <!--Basic-->
-    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/GuardLogStatement" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/UseTryWithResources" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" deprecated="true" />
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" />
+    <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField" />
+    <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" />
+    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" />
+    <rule ref="category/java/bestpractices.xml/GuardLogStatement" />
+    <rule ref="category/java/bestpractices.xml/UseTryWithResources" />
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" />
 
     <!--Codestyle-->
-    <rule ref="category/java/codestyle.xml/AvoidDollarSigns" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/ClassNamingConventions" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/FieldNamingConventions" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/FormalParameterNamingConventions" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/MethodNamingConventions" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/PackageCase" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/ShortClassName" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/ShortMethodName" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/ShortVariable" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/UnusedImports" deprecated="true"/>
-    <rule ref="category/java/codestyle.xml/UnnecessaryImport" deprecated="true"/>
+    <rule ref="category/java/codestyle.xml/AvoidDollarSigns" />
+    <rule ref="category/java/codestyle.xml/ClassNamingConventions" />
+    <rule ref="category/java/codestyle.xml/FieldNamingConventions" />
+    <rule ref="category/java/codestyle.xml/FormalParameterNamingConventions" />
+    <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions" />
+    <rule ref="category/java/codestyle.xml/MethodNamingConventions" />
+    <rule ref="category/java/codestyle.xml/PackageCase" />
+    <rule ref="category/java/codestyle.xml/ShortClassName" />
+    <rule ref="category/java/codestyle.xml/ShortMethodName" />
+    <rule ref="category/java/codestyle.xml/ShortVariable" />
+    <rule ref="category/java/codestyle.xml/UnusedImports" >
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport" >
 
-    <rule ref="category/java/codestyle.xml/ExtendsObject" deprecated="true" />
-    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" deprecated="true" />
+    <rule ref="category/java/codestyle.xml/ExtendsObject" />
+    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" />
 
-    <rule ref="category/java/performance.xml/BigIntegerInstantiation" deprecated="true" />
-<!--    <rule ref="category/java/performance.xml/BooleanInstantiation" deprecated="true" />-->
+    <rule ref="category/java/performance.xml/BigIntegerInstantiation" />
+<!--    <rule ref="category/java/performance.xml/BooleanInstantiation" />-->
 
-    <rule ref="category/java/design.xml/CollapsibleIfStatements" deprecated="true" />
-    <rule ref="category/java/design.xml/SimplifiedTernary" deprecated="true" />
+    <rule ref="category/java/design.xml/CollapsibleIfStatements" />
+    <rule ref="category/java/design.xml/SimplifiedTernary" />
 
 </ruleset>

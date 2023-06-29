@@ -10,16 +10,16 @@ empty block statement, empty try or catch block,...).
   </description>
 
     <!-- Rules, that have been moved into a category -->
-    <rule ref="category/java/errorprone.xml/EmptyCatchBlock" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyFinallyBlock" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyIfStmt" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyInitializer" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyStatementBlock" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyStatementNotInLoop" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyInitializer" name="EmptyStaticInitializer" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptySwitchStatements" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptySynchronizedBlock" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyTryBlock" deprecated="true" />
-    <rule ref="category/java/errorprone.xml/EmptyWhileStmt" deprecated="true" />
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyFinallyBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyIfStmt"/>
+    <rule ref="category/java/errorprone.xml/EmptyInitializer"/>
+    <rule ref="category/java/errorprone.xml/EmptyStatementBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyStatementNotInLoop"/>
+    <rule ref="category/java/errorprone.xml/EmptyInitializer" name="EmptyStaticInitializer"/>
+    <rule ref="category/java/errorprone.xml/EmptySwitchStatements"/>
+    <rule ref="category/java/errorprone.xml/EmptySynchronizedBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyTryBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyWhileStmt"/>
 
 </ruleset>
