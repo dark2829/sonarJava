@@ -7,7 +7,7 @@
     <description>Java code rules</description>
 
     <!--Basic-->
-    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" />  
-    <rule ref="category/java/codestyle.xml/UnnecessaryImport" />
+    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" message="---" />  
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport" message="Tienes algunos imports que no estas usando"  />
     
 </ruleset>
