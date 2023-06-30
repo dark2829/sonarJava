@@ -16,6 +16,8 @@
     <rule ref="category/java/performance.xml/StringToString"/> <!--Evitar hacer toString de un string-->
     <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings"/> <!--Usar equals en lugar de == para comparar strings-->
     <rule ref="category/java/errorprone.xml/SimpleDateFormatNeedsLocale"/> <!--Especificare una configuracion regional al crear una fecha-->
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock"/> <!--Verify empty catch blocks-->
+    
     <!-- <rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops"/> No crear objetos dentro de bucles -->
     
     

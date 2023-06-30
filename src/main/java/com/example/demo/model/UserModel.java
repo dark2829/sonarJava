@@ -14,6 +14,11 @@ public class UserModel {
         this.username = username;
         this.email = email;
         log.info("Application started successfully");
+        try{
+
+        }catch(Exceptio e){
+            
+        }
     }
 
 }
