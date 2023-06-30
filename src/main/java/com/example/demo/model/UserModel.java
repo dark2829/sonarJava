@@ -3,7 +3,7 @@ package com.example.demo.model;
 import lombok.Data;
 
 @Data
-public class User {
+public class UserModel {
 
     private Long id;
     private String username;
