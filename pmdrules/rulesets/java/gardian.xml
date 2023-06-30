@@ -11,7 +11,7 @@
     <rule ref="category/java/codestyle.xml/UnnecessaryImport"/> <!--Imports un used, create conflict in program-->
     <rule ref="category/java/codestyle.xml/ShortMethodName"/> <!--Not use short name method min 5 char-->
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/> <!--Use foreach not use for-->
-    <rule ref="category/java/bestpractices.xml/ShortClassName"/>  <!--No tener nombres de clase cortos-->
+    <rule ref="category/java/codestyle.xml/ShortClassName"/>  <!--No tener nombres de clase cortos-->
     <rule ref="category/java/performance.xml/UselessStringValueOf"/> <!--No usar string.valueof solo usar valueof-->
     <rule ref="category/java/performance.xml/StringToString"/> <!--Evitar hacer toString de un string-->
     <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings"/> <!--Usar equals en lugar de == para comparar strings-->
