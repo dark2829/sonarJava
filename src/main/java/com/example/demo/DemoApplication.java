@@ -21,8 +21,8 @@ public class DemoApplication {
         nombres.add("Ana");
 
         // Usando un bucle foreach
-        for(int i = 0: i <= nombres.lenght(): i++){
-            System.out.println(nombres[i]);
+        for (int i = 0; i < nombres.size(); i++) {
+            System.out.println(nombres.get(i));
         }
     }
 
