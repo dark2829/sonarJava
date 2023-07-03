@@ -7,18 +7,18 @@
     <description>Java code rules</description>
 
     <!--Basic-->
-    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" message="---" />  <!--No usar string.valueof solo usar valueof-->
-    <rule ref="category/java/codestyle.xml/UnnecessaryImport"/> <!--Imports un used, create conflict in program-->
-    <rule ref="category/java/codestyle.xml/ShortMethodName"/> <!--Not use short name method min 5 char-->
-    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/> <!--Use foreach not use for-->
-    <rule ref="category/java/codestyle.xml/ShortClassName"/>  <!--No tener nombres de clase cortos-->
-    <rule ref="category/java/performance.xml/UselessStringValueOf"/> <!--No usar string.valueof solo usar valueof-->
-    <rule ref="category/java/performance.xml/StringToString"/> <!--Evitar hacer toString de un string-->
-    <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings"/> <!--Usar equals en lugar de == para comparar strings-->
-    <rule ref="category/java/errorprone.xml/SimpleDateFormatNeedsLocale"/> <!--Especificare una configuracion regional al crear una fecha-->
-    <rule ref="category/java/errorprone.xml/EmptyCatchBlock"/> <!--Verify empty catch blocks-->
+    <rule ref="category/java/bestpractices.xml/AccessorClassGeneration" message="1" />  <!--No usar string.valueof solo usar valueof-->
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport" message="2" /> <!--Imports un used, create conflict in program-->
+    <rule ref="category/java/codestyle.xml/ShortMethodName" message="3" /> <!--Not use short name method min 5 char-->
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" message="4" /> <!--Use foreach not use for-->
+    <rule ref="category/java/codestyle.xml/ShortClassName" message="5" />  <!--No tener nombres de clase cortos-->
+    <rule ref="category/java/performance.xml/UselessStringValueOf" message="6" /> <!--No usar string.valueof solo usar valueof-->
+    <rule ref="category/java/performance.xml/StringToString" message="7" /> <!--Evitar hacer toString de un string-->
+    <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings" message="8" /> <!--Usar equals en lugar de == para comparar strings-->
+    <rule ref="category/java/errorprone.xml/SimpleDateFormatNeedsLocale" message="9" /> <!--Especificare una configuracion regional al crear una fecha-->
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock" message="10" /> <!--Verify empty catch blocks-->
     
-    <!-- <rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops"/> No crear objetos dentro de bucles -->
+    <!-- <rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops"message="1" /> No crear objetos dentro de bucles -->
     
     
 </ruleset>
