@@ -49,11 +49,6 @@ jobs:
           echo -e "\e[1;32mACCEPT\e[0m PMD no encontró errores."
         fi
 
-    - name: Revisar Carpeta
-      run:
-        cd pmd/pmd-bin-7.0.0-rc3/bin
-        ls
-
     - name: Guardar caché de PMD
       if: steps.cache-check.outputs.cache-hit != 'true'
       uses: actions/cache@v2
