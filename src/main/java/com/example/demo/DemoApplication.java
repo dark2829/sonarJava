@@ -22,7 +22,7 @@ public class DemoApplication {
 
         // Usando un bucle foreach
         for (String nombre : nombres) {
-            System.out.println(nombre);
+            System.out.println(nombre)
         }
     }
 
