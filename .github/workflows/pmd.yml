@@ -39,9 +39,9 @@ jobs:
     - name: Ejecutar PMD
       run: |
         cd pmd/pmd-bin-7.0.0-rc3/bin
-        output=$(./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f html -r report.html)
+        output=$(./pmd check -d ../../../src/main/java -R ../../../pmdrules/rulesets/java/gardian.xml -f text)
         echo "$output"
-        xdg-open report.html
+        ls
         if echo "$output" | grep -q "ERROR" || echo "$output" | grep -q "ParseException" ; then
           echo -e "\e[1;31mFAILED\e[0m PMD encontró un errores en tu codigo."
           exit 1
